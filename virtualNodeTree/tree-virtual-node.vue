@@ -19,7 +19,7 @@
     ref="node"
   >
     <div class="el-tree-node__content">
-      <span aria-hidden="true" :style="{ 'width': (source.level - 1) * tree.indent + 'px' }"></span>
+      <span aria-hidden="true" :style="{ 'padding-left': (source.level - 1) * tree.indent + 'px' }"></span>
       <span
         :class="[
           { 'is-leaf': source.isLeaf, expanded: !source.isLeaf && expanded },
